@@ -1,0 +1,18 @@
+let schaakbordString = '';
+
+   for (let rij = 1; rij < 9; rij++) {  
+     
+      for (let kolom = 1; kolom < 9; kolom++) {  
+ 
+         if ((rij + kolom) %2==0) {
+             schaakbordString = schaakbordString + '#';
+         } else  {
+             schaakbordString = schaakbordString + ' ';
+         }
+    
+      }  
+
+     console.log(schaakbordString) + '\n';  
+     schaakbordString = '';
+
+   }
